@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'card',
     loadChildren: () => import('./components/pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'alert',
+    loadChildren: () => import('./components/pages/alert/alert.module').then( m => m.AlertPageModule)
   }
 ];
 
